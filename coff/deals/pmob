@@ -1,0 +1,59 @@
+#!/bin/bash
+clear
+
+
+# pmob stand for project mob. It's helper 
+# for manipulating projects inside freelance dir.
+
+
+usage()
+{
+	echo "Usage: pmob [OPTION]..."
+	echo " -p, --pack            pack projects"
+	echo " -u, --unpack          unpack projects"
+}
+
+# pack   - 0
+# unpack - 1
+guard()
+{
+	#test -e *.tar
+	file frog.tar | grep -q gzip
+	if [[ $? -eq $1 ]]; then
+		echo "[~] Warning: overhelming project "
+		exit
+	fi
+}
+
+pack()
+{
+	echo "[*] packing projects.."
+	
+	guard 0
+	for prj in $(ls --hide=revman --hide=README.md --hide=mob); do
+		echo -e '    ' "$prj.tar"
+		tar -zcf "$prj.tar" "$prj" && rm -rf $prj
+	done
+}
+
+unpack()
+{
+	echo "[*] unpacking projects.."
+
+	guard 1
+	for prj in $(ls --hide=revman --hide=README.md --hide=mob); do
+		echo -e '    ' "$prj"
+		tar -xf $prj && rm -rf $prj
+	done
+}
+
+
+# Interface
+
+if [[ $1 == 'pack' ]]; then
+	pack
+elif [[ $1 == 'unpack' ]]; then
+	unpack
+else
+	usage
+fi

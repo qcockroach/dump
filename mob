@@ -1,0 +1,12 @@
+#!/bin/bash
+clear
+
+
+dumppush()
+{
+	git add .
+	git commit -m 'dump commit'
+	git push
+}
+
+dumppush

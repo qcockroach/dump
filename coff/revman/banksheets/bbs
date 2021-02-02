@@ -1,0 +1,125 @@
+#!/bin/python3
+import re
+import os, sys
+
+"""
+	bbs stands for bank's balance sheet. Default option print
+	total values for each year like balance, field,
+	income, outcome, etc.
+"""
+
+FILENAME   = "income.uc"
+HDR_CNT    = 6 # count of header lines
+PADDING    = 3
+HEADERS    = []
+SHEETS     = []
+
+
+
+def usage():
+	print("""Usage: bbs [OPTION]...
+ -a, --all                 print headers from file
+ -i                        print income for specific year
+ -b                        print bank's balance
+ -h, --help                print this text """)
+ 
+
+def bbs_init():
+	global SHEETS
+
+	# get headers
+	f = open(FILENAME)
+	for i in  range(HDR_CNT):
+		HEADERS.append(f.readline())
+
+	# skip padding between headers and data 
+	for i in range(PADDING):
+		line = f.readline()
+
+	# read meaningfull lines only
+	while line:
+		line = f.readline()
+		if ('----' in line) or (line == '\n') or (not line):
+			continue
+		SHEETS.append(line)
+
+	return 0;
+
+
+def bbs_balance():
+	out = HEADERS[0].split(': ')[1]
+	# eleminate newline and dollar sign
+	out = out[:-2]
+	out = round(float(out), 1)
+	return out
+
+
+def bbs_deals():
+	out = HEADERS[3].split(': ')[1]
+	# eleminate newline and dollar sign
+	out = out[:-2]
+	out = round(float(out), 1)
+	return out
+
+
+def bbs_income(_year=0):
+	total   = 0;
+
+	for line in SHEETS:
+		price = line.split()[2]
+		year  = line.split()[0]
+		if (_year == int(year) or _year == 0):
+			total += float(price)
+
+	return round(total, 1)
+
+
+def bbs_headers():
+	for hdr in HEADERS:
+		print(hdr, end='')
+
+
+def bbs_update(row, columnn):
+	pass
+
+
+def bbs_edit(columnn):
+	pass
+
+
+def options(argv):
+	if (len(argv) == 1):
+		bbs_headers()
+		return 0;
+
+	if (argv[1] == '-i'):
+		if (len(argv) == 2 or argv[2] == "all"):
+			out = bbs_income(0);
+			print("Total income: {income}$".format(income=out))
+		elif (re.search('^[0-9]{4}', argv[2])):
+			out = bbs_income(int(argv[2]))
+			print("income: {income}$".format(income=out))
+		else:
+			print("[!] Error: wrong date:", argv[2])
+			print("    bbs --help for more information")
+			return 127
+
+	elif (argv[1] == '-b'):
+		out = bbs_balance();
+		print("balance: {balance}$".format(balance=out))
+
+	elif (argv[1] == '--help'):
+		usage()
+
+	else:
+		print("[!] Error: wrong option `{opt}`".format(opt=argv[1]))
+		print("    bbs --help for more information")
+
+
+def main():
+	bbs_init();
+	options(sys.argv)
+
+
+if __name__ == '__main__':
+	main()
