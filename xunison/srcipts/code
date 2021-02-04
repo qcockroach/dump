@@ -1,0 +1,16 @@
+#!/bin/bash
+clear
+
+
+#ssh-keygen -t rsa -C "hon.mechanic@xunison.com"
+
+
+build()
+{
+        test -e xbrain-v2-qca40xx || git clone git@bitbucket.org:xunisonteam/xbrain-v2-qca40xx.git --recursive
+        cd xbrain-v2-qca40xx
+        ./xbrain-v2-ipq4019.sh prep_sdk init
+        ls build/bin
+}
+
+
