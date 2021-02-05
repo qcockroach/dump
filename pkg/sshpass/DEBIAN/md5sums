@@ -1,0 +1,6 @@
+3ccf30cb71f39fd65f74f391b6fbff23  usr/bin/sshpass
+02acf4210239b97849d9fa37e524e90b  usr/share/doc/sshpass/changelog.Debian.gz
+71ca246a5d5b3424c703b653a601e992  usr/share/doc/sshpass/changelog.Debian.i386.gz
+adb90cd4dd3bad6f7ad598c3dc82c380  usr/share/doc/sshpass/changelog.gz
+df870db178b759d3229b9ac9ec18d26b  usr/share/doc/sshpass/copyright
+0e2ebe6b8fb2fe9da8881213e4f3038f  usr/share/man/man1/sshpass.1.gz
