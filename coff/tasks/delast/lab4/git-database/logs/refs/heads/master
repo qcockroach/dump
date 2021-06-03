@@ -1,0 +1,30 @@
+0000000000000000000000000000000000000000 8cb7abbac03822459f5b4f6fcc2a2793765e774d qcockroach <hon.mechanic@gmail.com> 1622553813 +0000	commit (initial): added textbook code
+8cb7abbac03822459f5b4f6fcc2a2793765e774d f75c906974404b0800923897113966694b81a031 qcockroach <hon.mechanic@gmail.com> 1622553831 +0000	commit: finished lab4
+f75c906974404b0800923897113966694b81a031 b10df69b4d22a7be741631b48a0ad9ada5a521c4 qcockroach <hon.mechanic@gmail.com> 1622553867 +0000	commit (amend): finished lab4
+b10df69b4d22a7be741631b48a0ad9ada5a521c4 4f4151653198fac8843cd5bf32e0206c4b1bc5ec qcockroach <hon.mechanic@gmail.com> 1622553936 +0000	commit (amend): finished lab4
+4f4151653198fac8843cd5bf32e0206c4b1bc5ec 99b229cbf7b71797509b46599974ee8611ad0fb8 qcockroach <hon.mechanic@gmail.com> 1622553955 +0000	commit (amend): finished lab4
+99b229cbf7b71797509b46599974ee8611ad0fb8 9b71392d39659043a7f552051d2dd0b3f1018e1b qcockroach <hon.mechanic@gmail.com> 1622553966 +0000	commit (amend): finished lab4
+9b71392d39659043a7f552051d2dd0b3f1018e1b 0ef301b12d4dcf5af105bfa180b7978318978730 qcockroach <hon.mechanic@gmail.com> 1622554019 +0000	commit (amend): finished lab4
+0ef301b12d4dcf5af105bfa180b7978318978730 4730006d5db0233fa03028e6c085e1108ad79067 qcockroach <hon.mechanic@gmail.com> 1622592518 +0000	commit: fixed escape button
+4730006d5db0233fa03028e6c085e1108ad79067 f36c33b68cea0879b8acc7b9efea5aa94df7c8e8 qcockroach <hon.mechanic@gmail.com> 1622592980 +0000	commit (amend): fixed escape button
+f36c33b68cea0879b8acc7b9efea5aa94df7c8e8 b7fde43a4abec9fc2d5fb6b19a98dd9ee9d0c5cc qcockroach <hon.mechanic@gmail.com> 1622592981 +0000	commit (amend): fixed escape button
+b7fde43a4abec9fc2d5fb6b19a98dd9ee9d0c5cc b73586f300acea4da234b37b3b8e7b8f26144cb4 qcockroach <hon.mechanic@gmail.com> 1622594780 +0000	commit (amend): fixed escape button
+b73586f300acea4da234b37b3b8e7b8f26144cb4 910ae198ca2951548dd9a44984beb0848782a58f qcockroach <hon.mechanic@gmail.com> 1622595138 +0000	commit (amend): fixed escape button
+910ae198ca2951548dd9a44984beb0848782a58f d055a4d2355bc23b582169dd41b61516265586fe qcockroach <hon.mechanic@gmail.com> 1622595203 +0000	commit (amend): fixed escape button
+d055a4d2355bc23b582169dd41b61516265586fe e5071a6f07066b54e694568a20134568342756d1 qcockroach <hon.mechanic@gmail.com> 1622595239 +0000	commit (amend): fixed escape button
+e5071a6f07066b54e694568a20134568342756d1 199d1e1f2b4e8124b83c47879e7c7199c3fd89e9 qcockroach <hon.mechanic@gmail.com> 1622595321 +0000	commit (amend): fixed escape button
+199d1e1f2b4e8124b83c47879e7c7199c3fd89e9 8942bdfc5d7e27a54779e62343afcce42092addb qcockroach <hon.mechanic@gmail.com> 1622595351 +0000	commit (amend): fixed escape button
+8942bdfc5d7e27a54779e62343afcce42092addb ecfefdd32fba5bed8f41f375ae7bb66494a1ae6a amonov_hurshed <hon.mechanic@xunison.com> 1622614094 -0600	commit: added missing header
+ecfefdd32fba5bed8f41f375ae7bb66494a1ae6a 1f2d019b69b5aef7abda6839aefda84eedebb6c6 amonov_hurshed <hon.mechanic@xunison.com> 1622614145 -0600	commit: included .gitignore
+1f2d019b69b5aef7abda6839aefda84eedebb6c6 a04ac37681221f0dd845e3712e050b62696988ab amonov_hurshed <hon.mechanic@xunison.com> 1622614226 -0600	rebase -i (finish): refs/heads/master onto 8cb7abbac03822459f5b4f6fcc2a2793765e774d
+a04ac37681221f0dd845e3712e050b62696988ab 6a75779292c0bf0404de411067850e54e62c8633 amonov_hurshed <hon.mechanic@xunison.com> 1622614272 -0600	commit: deleted object files from track
+6a75779292c0bf0404de411067850e54e62c8633 6248a1bb759a3ef24bad33551e8246a28595ab5a qcockroach <hon.mechanic@gmail.com> 1622625573 +0000	commit: included .gitignore
+6248a1bb759a3ef24bad33551e8246a28595ab5a 3031917e23b0ef8456cdb952f5876de3491a6455 qcockroach <hon.mechanic@gmail.com> 1622627413 +0000	commit: fixed Makefile
+3031917e23b0ef8456cdb952f5876de3491a6455 71802792c3ad5d4cd4e0ae3b5cb8c3afd9f302c4 qcockroach <hon.mechanic@gmail.com> 1622627967 +0000	commit: converted interface to russian
+71802792c3ad5d4cd4e0ae3b5cb8c3afd9f302c4 4423336db5d671543e44313b03a8031287ed72e4 qcockroach <hon.mechanic@gmail.com> 1622628769 +0000	commit: changed final examples
+4423336db5d671543e44313b03a8031287ed72e4 7650cb05e4c927f8aef5aa7f60d211b12d661872 qcockroach <hon.mechanic@gmail.com> 1622628824 +0000	commit: added program screenshots
+7650cb05e4c927f8aef5aa7f60d211b12d661872 7a76b9f6d42698193ae0771e37d46c5786c45109 qcockroach <hon.mechanic@gmail.com> 1622662987 +0000	commit: changed user interface
+7a76b9f6d42698193ae0771e37d46c5786c45109 959ac634eca2b4334fcb367ce80e117e313eb6e2 qcockroach <hon.mechanic@gmail.com> 1622664026 +0000	commit (amend): changed user interface
+959ac634eca2b4334fcb367ce80e117e313eb6e2 f7cfd472d91446912bebf5df24d5683f043a6f12 qcockroach <hon.mechanic@gmail.com> 1622667457 +0000	commit (amend): changed user interface
+f7cfd472d91446912bebf5df24d5683f043a6f12 fa3313d7e99f0af4d53d92fb61808df138405ad1 qcockroach <hon.mechanic@gmail.com> 1622667727 +0000	commit: added program screenshots
+fa3313d7e99f0af4d53d92fb61808df138405ad1 e88d85f1f9bc7db62c386282777abf65aba57924 qcockroach <hon.mechanic@gmail.com> 1622671442 +0000	commit (amend): added program screenshots

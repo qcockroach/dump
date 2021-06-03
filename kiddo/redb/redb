@@ -1,0 +1,65 @@
+#!/bin/python3
+
+# main source of examples
+# https://github.com/python273/vk_api/blob/master/examples
+# https://github.com/python273/vk_api
+
+import os
+import vk_api
+from vk_api.longpoll import VkLongPoll, VkEventType
+
+
+fname = "/home/kali/.redb"
+token = "b92e8c987e6c850cc4619af6030c26609a73ae323b88d799a26d27eac43de00a42247605a85eaae1bddbb"
+vk_session = vk_api.VkApi(token = token)
+
+
+def getuname(uid):
+	if (uid == 559680030):
+		print ("Virm")
+
+def reply(uid):
+	msg = "I made Mr Virm aware about you."
+	vk_session.method("messages.send", {'user_id': uid, 'message' : msg, 'random_id' : 0})
+
+def cmderror(uid, _cmd):
+	msg = "Error: there's no command `{cmd}'. Please, use correct one.".format(cmd=_cmd)
+	vk_session.method("messages.send", {'user_id': uid, 'message' : msg, 'random_id' : 0})
+
+
+def savemsg(event):
+	msg = "{datetime}\n\n{uname}: {msg}\n".format(
+		uname="Nikki",
+		datetime=str(event.datetime),
+		msg="I need you"
+	)
+	with open(fname, "w") as f:
+		f.write (msg)
+
+def main():
+
+	session_api = vk_session.get_api()
+	longpoll = VkLongPoll(vk_session)
+
+	# main loop for incoming messages
+	for event in longpoll.listen():
+		if event.type == VkEventType.MESSAGE_NEW:
+			if event.to_me:
+				uid = event.user_id
+				cmd = event.text.lower()
+
+				if (cmd == "/redb"):
+					reply(uid)
+				else:
+					cmderror(uid, cmd)
+					continue
+
+				# save time, username and incame message in file
+				savemsg(event)
+
+				# aware me
+				os.system ("sublime_text ~/.redb")
+
+
+if __name__ == '__main__':
+	main()

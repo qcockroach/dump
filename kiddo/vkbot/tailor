@@ -1,0 +1,45 @@
+#!/bin/python3
+
+# main source of examples
+# https://github.com/python273/vk_api/blob/master/examples
+# https://github.com/python273/vk_api
+
+import os, sys
+import vk_api
+from vk_api.longpoll import VkLongPoll, VkEventType
+import Tbrain
+
+
+token = "790be110742e0d5c6ffce5329e2a6190b8f4455830f04e308fef11c1334cb6905f8c79a2557a103ad2eab"
+vk_session = vk_api.VkApi(token = token)
+
+
+def sender(id, text):
+	vk_session.method("messages.send", {'user_id': id, 'message' : text, 'random_id' : 0})
+
+
+def main():
+	session_api = vk_session.get_api()
+	longpoll = VkLongPoll(vk_session)
+
+	# create message file if it's missing
+	os.system ("touch ~/.tailor")
+
+	# main loop for incoming messages
+	for event in longpoll.listen():
+		if event.type == VkEventType.MESSAGE_NEW:
+			if event.to_me:
+				id = event.user_id
+				request = event.text.lower()
+				resply = Tbrain.getreply(request)
+				sender (id, resply)
+
+				# write message into file
+				# ...
+
+				# aware me here.
+				os.system ("sublime_text ~/.tailor")
+
+
+if __name__ == '__main__':
+	main()

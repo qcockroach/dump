@@ -1,0 +1,78 @@
+#!/bin/bash
+
+
+# ip command examples
+https://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/#5
+
+# network device types
+https://developers.redhat.com/blog/2018/10/22/introduction-to-linux-interfaces-for-virtual-networking/
+
+# quizz
+https://linuxjourney.com/lesson/network-interfaces
+
+# redhat cheatsheet
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/sec-configuring_ip_networking_with_nmcli
+
+#!> What is difference between network connection and network device?
+
+
+
+# original state
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.100  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::64f5:dfdf:35c3:6338  prefixlen 64  scopeid 0x20<link>
+        ether 3c:97:0e:98:bd:35  txqueuelen 1000  (Ethernet)
+        RX packets 1918529  bytes 561914510 (535.8 MiB)
+        RX errors 0  dropped 2  overruns 0  frame 0
+        TX packets 1284171  bytes 102634006 (97.8 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 19  
+
+
+# sudo ip link set eth0 down
+eth0: flags=4098<BROADCAST,MULTICAST>  mtu 1500
+        ether 3c:97:0e:98:bd:35  txqueuelen 1000  (Ethernet)
+        RX packets 1918804  bytes 561940795 (535.9 MiB)
+        RX errors 0  dropped 2  overruns 0  frame 0
+        TX packets 1284382  bytes 102648659 (97.8 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 19
+
+
+# sudo ifconfig eth0 up
+br0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::3e97:eff:fe98:bd35  prefixlen 64  scopeid 0x20<link>
+        ether 3c:97:0e:98:bd:35  txqueuelen 1000  (Ethernet)
+        RX packets 129  bytes 9273 (9.0 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 11  bytes 970 (970.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+# ip link add br0 type bridge
+br0: flags=4098<BROADCAST,MULTICAST>  mtu 1500
+        ether 9a:99:0e:d2:8b:59  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+# ip link set eth0 master br0
+br0: flags=4098<BROADCAST,MULTICAST>  mtu 1500
+        ether 3c:97:0e:98:bd:35  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+# ip link set tap1 master br0
+
+# ip link set tap2 master br0
+# ip link set veth1 master br
+
+sudo ip link set br0 up
+sudo ip link set lo up
+
+

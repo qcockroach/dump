@@ -1,0 +1,1 @@
+cmd_/home/kali/dump/sys/kmod/cockroach.ko := ld -r -m elf_i386  --build-id  -T /usr/src/linux-headers-5.5.0-kali2-common/scripts/module-common.lds -o /home/kali/dump/sys/kmod/cockroach.ko /home/kali/dump/sys/kmod/cockroach.o /home/kali/dump/sys/kmod/cockroach.mod.o;  true

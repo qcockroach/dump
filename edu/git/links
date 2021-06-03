@@ -1,0 +1,20 @@
+#!/bin/bash
+clear
+
+
+essetials:
+ 	https://stackoverflow.com/questions/3689838/whats-the-difference-between-head-working-tree-and-index-in-git
+	https://medium.com/mindorks/what-is-git-object-model-6009c271ca66#:~:text=Git%20Object%20Store&text=The%20size%20is%20simply%20the,git%2Fobjects%20.
+
+	
+git log --pretty=oneline
+
+
+main
+ba9578070b767db10b87a018c975c7f31b61a481 (HEAD -> main, origin/main, origin/HEAD) push to remote
+
+br1
+9f6fc9020cfeebaff4829f608911afa87cb10349 (HEAD -> br1, origin/br1) delete some remote commits [even main commits]
+
+
+

@@ -1,0 +1,29 @@
+#!/bin/bash
+
+BOX_PREFIX=/media/kali/box/home/kali
+PREFIX=$BOX_PREFIX/dump/kiddo/redbutton/msgs
+
+
+# Nikki's phone number: +49 178 8963366
+# https://files.000webhost.com/
+
+# Red Button (webpage)
+# https://concatenate-definit.000webhostapp.com/
+
+function redbutton()
+{
+	curl --silent "https://concatenate-definit.000webhostapp.com/data/name.uc" > $PREFIX/currmsg.uc
+	diff $PREFIX/currmsg.uc $PREFIX/prevmsg.uc > /dev/null
+	test $? -eq 0 && return
+
+	# update message status
+	cat $PREFIX/currmsg.uc > $PREFIX/prevmsg.uc
+	sublime_text $PREFIX/currmsg.uc
+}
+
+
+while (true); do
+	echo ">>"
+	redbutton
+	sleep 210
+done

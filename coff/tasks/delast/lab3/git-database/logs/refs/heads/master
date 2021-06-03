@@ -1,0 +1,18 @@
+0000000000000000000000000000000000000000 e862ecb54ea36d0171867d44b7d8e6a8448fbec8 qcockroach <hon.mechanic@gmail.com> 1622555757 +0000	commit (initial): added code from textbook
+e862ecb54ea36d0171867d44b7d8e6a8448fbec8 a4f59d7b93a5a512c3990e77751881b99c76b1c6 qcockroach <hon.mechanic@gmail.com> 1622567001 +0000	commit: finished lab3
+a4f59d7b93a5a512c3990e77751881b99c76b1c6 47fabe8fd077b5c3a05309f2527dbdee58ccf8fd qcockroach <hon.mechanic@gmail.com> 1622592866 +0000	commit: fixed escape button
+47fabe8fd077b5c3a05309f2527dbdee58ccf8fd 6709654110da58123600f4fe28217d1b20b44e66 qcockroach <hon.mechanic@gmail.com> 1622593762 +0000	commit: replace printf with cout because of ESP bug
+6709654110da58123600f4fe28217d1b20b44e66 b76676ada901b54b68603c4ca7bfe72e8b5fd94d qcockroach <hon.mechanic@gmail.com> 1622593855 +0000	commit (amend): replace printf with cout because of ESP bug
+b76676ada901b54b68603c4ca7bfe72e8b5fd94d 9ef97e7cdd21a81afbdacd0868b0bbceeafbf77e qcockroach <hon.mechanic@gmail.com> 1622594763 +0000	commit (amend): replace printf with cout because of ESP bug
+9ef97e7cdd21a81afbdacd0868b0bbceeafbf77e e18bb5309e4a4af2f4966189156272cdfa3a2345 qcockroach <hon.mechanic@gmail.com> 1622625500 +0000	commit: included .gitignore
+e18bb5309e4a4af2f4966189156272cdfa3a2345 8a8e85d2104cf240132950c70159d507d3e93127 qcockroach <hon.mechanic@gmail.com> 1622625537 +0000	commit: added missing header
+8a8e85d2104cf240132950c70159d507d3e93127 a539394e5aa6c86e5091fdf661088c1a11c30d1b qcockroach <hon.mechanic@gmail.com> 1622627032 +0000	commit: fixed bug: delete element
+a539394e5aa6c86e5091fdf661088c1a11c30d1b 83c9071c81458d3d8c75cfe57ffbf4dea7205d3f qcockroach <hon.mechanic@gmail.com> 1622627252 +0000	commit: delete run of program from Makefile
+83c9071c81458d3d8c75cfe57ffbf4dea7205d3f 39423e54f25907509ff36a1a51004dcb6fe01e6d qcockroach <hon.mechanic@gmail.com> 1622627664 +0000	commit: added program screenshots
+39423e54f25907509ff36a1a51004dcb6fe01e6d 40c8b3437ca3cfe8659c4454b41ae0fe05778852 qcockroach <hon.mechanic@gmail.com> 1622644470 +0000	commit: amented user interface
+40c8b3437ca3cfe8659c4454b41ae0fe05778852 760f0c63bdd34891b12fb497c1d9f35d7c8e6fe7 qcockroach <hon.mechanic@gmail.com> 1622644547 +0000	commit (amend): amented user interface
+760f0c63bdd34891b12fb497c1d9f35d7c8e6fe7 fe8b5e26e5b115c27af7731c4f8607f7a5d2fafa qcockroach <hon.mechanic@gmail.com> 1622644889 +0000	commit (amend): amented user interface
+fe8b5e26e5b115c27af7731c4f8607f7a5d2fafa 23dc556f217aba4dd53025aef5ccfd28b04f4fff qcockroach <hon.mechanic@gmail.com> 1622645609 +0000	commit (amend): amented user interface
+23dc556f217aba4dd53025aef5ccfd28b04f4fff 3d0ed0b76039e17796ccea87eb4c20cfce128bff qcockroach <hon.mechanic@gmail.com> 1622646128 +0000	commit (amend): amented user interface
+3d0ed0b76039e17796ccea87eb4c20cfce128bff 60ef0ecd6c62342e718dcfec3bb159e16156c91d qcockroach <hon.mechanic@gmail.com> 1622646151 +0000	commit (amend): amented user interface
+60ef0ecd6c62342e718dcfec3bb159e16156c91d 30bf1a4d99cac6660815c4d0e752949833486f7b qcockroach <hon.mechanic@gmail.com> 1622648190 +0000	commit: finished lab4

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+
+option web_login 'TT_admin_changed4'
+option timezone 'TT7_TIMEZONE'
+option web_password 'admin123'
+
+
+change_apn.lua
+
+find /etc -type f -name change_apn.lua
+

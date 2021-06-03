@@ -1,0 +1,42 @@
+#!/bin/bash
+
+ CH  7 ][ Elapsed: 6 s ][ 2021-02-07 10:43                                                                                                                            
+ CH  7 ][ Elapsed: 42 s ][ 2021-02-07 10:43                                                                                                                           
+                                                                                                                                                                      
+ BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                                                                      
+                                                                                                                                                                      
+ 90:EF:68:FC:4F:BC  -76        2        0    0   5  270   WPA2 CCMP   PSK  kgs43                                                                                      
+ 74:83:C2:EA:9A:A1   -1        0        0    0  -1   -1                    <length:  0>                                                                               
+ E0:63:DA:4E:26:9C   -1        0        0    0  -1   -1                    <length:  0>                                                                               
+ 
+ CC:32:E5:F4:02:DD  -72      169        1    0  11  270   WPA2 CCMP   PSK  TP-Link_02DD  
+
+ 44:E9:DD:31:D1:EA  -54      109       11    0   1  130   WPA2 CCMP   PSK  TATTELECOM_D1EA                                                                            
+ 1C:5F:2B:98:54:EA  -61      133        0    0   4  130   WPA2 CCMP   PSK  MTSRouter-9854EA                                                                           
+ F8:F0:82:36:BA:7E  -62       84       24    0   2  270   WPA2 CCMP   PSK  KGS_157                                                                                    
+ 50:64:2B:4D:CB:C6  -65       16        0    0  13  270   WPA2 CCMP   PSK  BAZA13                                                                                     
+ DC:E3:05:15:DA:05  -60       86        4    0   1  270   WPA2 CCMP   PSK  WiFi-DOM.ru-2592                                                                           
+ 80:26:89:11:FD:9A  -67       27        0    0  13  270   WPA2 CCMP   PSK  KGS_163                                                                                    
+ F0:B4:D2:45:B7:25  -67       19        0    0  13  270   WPA2 CCMP   PSK  MTS_Router_140466-b722                                                                     
+ B0:95:75:79:03:D7  -64      105        0    0   2  130   WPA2 CCMP   PSK  KGS_23                                                                                     
+ 68:FF:7B:40:E9:56  -71       82        0    0   2  270   WPA2 CCMP   PSK  KGS-202                                                                                    
+ F0:B4:D2:18:F9:DB  -70       21        1    0   1  270   WPA2 CCMP   PSK  DIR-615-F9DA                                                                               
+ F0:B4:29:EE:70:F5  -71       40        5    0   8  130   WPA2 CCMP   PSK  Xiaomi_Router                                                                              
+ 58:D5:6E:A3:AF:83  -73       19        0    0   1  130   WPA2 CCMP   PSK  MTS_Router_000098                                                                          
+ B8:DE:5E:DC:52:C0  -72        5        0    0   3   65   WPA  CCMP   PSK  70mai_d02_52c0                                                                             
+ D8:0D:17:0A:5B:B7  -75       85        3    0   4  270   WPA2 CCMP   PSK  TP-Link_5BB7                                                                               
+ BC:0F:9A:03:D9:DB  -72       21        0    0  13  130   WPA2 CCMP   PSK  MTS-77                                                                                     
+ 98:DA:C4:D2:9B:61  -72       12        2    0   1  270   WPA2 CCMP   PSK  KGS_69                                                                                     
+ 30:B5:C2:8B:28:70  -71       54        0    0   3  270   WPA2 CCMP   PSK  KGS 170                                                                                    
+ E4:18:6B:0D:6A:BC  -73       29        1    0   3  270   WPA2 CCMP   PSK  KGS 85                                                                                     
+ 98:DA:C4:D2:AE:F0  -73       14        0    0   1  130   WPA2 CCMP   PSK  KGS_184                                                                                    
+ 04:95:E6:6C:88:41  -76       19        0    0   4  130   WPA2 CCMP   PSK  Tenda_6C8840                                                                               
+ C0:4A:00:F2:55:80  -71       26        2    0   6  135   WPA2 CCMP   PSK  KazGorSet-84                                                                               
+ 04:95:E6:8A:51:E1  -74       13        0    0   5  270   WPA2 CCMP   PSK  Samsung ten                                                                                
+ A0:AB:1B:30:30:BA  -74        9        0    0  13  270   WPA2 CCMP   PSK  DIR-825-30B myix                                                                           
+ 08:C6:B3:B7:84:91  -74       27        0    0   5  270   WPA2 CCMP   PSK  MTS_175                                                                                    
+ 44:D9:E7:60:AF:C5  -75        0        0    0  -1   -1                    <length:  0>                                                                               
+ AC:22:0B:8D:3E:D9  -75        0        0    0  -1   -1                    <length:  0>                                                                               
+ 08:C6:B3:1D:9F:11  -75        7        1    0   8  270   WPA2 CCMP   PSK  Tattelecom_1D9F03                                                                          
+ D8:47:32:08:F7:57  -76       16        0    0   4  270   WPA2 CCMP   PSK  kgs-105                                                                                    
+Quitting...7:84:91  -75        4        0    0   5  270   WPA2 CCMP   PSK  MTS_175   

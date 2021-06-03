@@ -1,0 +1,26 @@
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.100  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::98cf:3ee1:ba68:1fd  prefixlen 64  scopeid 0x20<link>
+        ether 3c:97:0e:98:bd:35  txqueuelen 1000  (Ethernet)
+        RX packets 1138  bytes 1039340 (1014.9 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 849  bytes 103803 (101.3 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 19  
+
+
+DEVICE  TYPE      STATE         CONNECTION 
+eth0    ethernet  connected     my-office  
+wlan0   wifi      disconnected  --         
+lo      loopback  unmanaged     --         
+
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.100  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::98cf:3ee1:ba68:1fd  prefixlen 64  scopeid 0x20<link>
+        ether 3c:97:0e:98:bd:35  txqueuelen 1000  (Ethernet)
+        RX packets 1393  bytes 1077841 (1.0 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 984  bytes 125720 (122.7 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 19

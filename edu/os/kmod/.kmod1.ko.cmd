@@ -1,0 +1,1 @@
+cmd_/home/kali/dump/edu/os/kmod/kmod1.ko := ld -r -m elf_i386  --build-id  -T /usr/src/linux-headers-5.5.0-kali2-common/scripts/module-common.lds -o /home/kali/dump/edu/os/kmod/kmod1.ko /home/kali/dump/edu/os/kmod/kmod1.o /home/kali/dump/edu/os/kmod/kmod1.mod.o;  true

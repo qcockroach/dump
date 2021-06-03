@@ -1,0 +1,20 @@
+#!/bin/bash
+
+DATE="09 Apr 2021 11:10:10"
+sudo date --set="$DATE -2 hours"
+
+
+
+
+git commit -m '[XV2-127] Rename "wan" context to the "net"' -m \
+'Renamed prefix "wan" to "net"
+Moved functionality from pdm
+Made changes on packages that depend on xu_utility
+Changed local variable names from "wan" to "net"
+'
+
+
+-Subproject commit ea9a3dde0fce61aa51b580303592f2ea122d786a
++Subproject commit b6d3fdaa968e022cb832c7c1074f6d09ddc262a0
+
+

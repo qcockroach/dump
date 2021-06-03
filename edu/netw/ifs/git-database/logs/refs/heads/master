@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 a08d590ab76fad43846c9285091ec53e5e1bdf7a qcockroach <hon.mechanic@gmail.com> 1622143038 +0000	commit (initial): [ifs] added correct and working interrface configs
+a08d590ab76fad43846c9285091ec53e5e1bdf7a 9d38920ff182272fd2260301ba00a3681559d69f qcockroach <hon.mechanic@gmail.com> 1622143144 +0000	commit: [ifs] added correct command for network restating
+9d38920ff182272fd2260301ba00a3681559d69f 9500f306af38571011981332b296ba04eed95486 qcockroach <hon.mechanic@gmail.com> 1622143269 +0000	commit: [ifs] added solution for networking.service failed
+9500f306af38571011981332b296ba04eed95486 d09d88356e7e5d6d97672416c36fb5aa7edc48e4 qcockroach <hon.mechanic@gmail.com> 1622156713 +0000	commit: [ifs] added link for further learning
+d09d88356e7e5d6d97672416c36fb5aa7edc48e4 4cb2b30aafb8c2413a5442d120cd8688aebb4813 qcockroach <hon.mechanic@gmail.com> 1622194767 +0000	commit: [ifs] added another tip

@@ -1,0 +1,39 @@
+#!/bin/bash
+
+root@OpenWrt:~# lua /etc/xu_lte/init_sim.lua 
+[03-21_12:04:48:323] Quectel_QConnectManager_Linux_V1.5
+[03-21_12:04:48:325] Find /sys/bus/usb/devices/1-1 idVendor=0x2c7c idProduct=0x306
+[03-21_12:04:48:326] Auto find qmichannel = /dev/qcqmi2
+[03-21_12:04:48:326] Auto find usbnet_adapter = eth2
+[03-21_12:04:48:328] Modem works in QMI mode
+[03-21_12:04:48:369] /proc/19856/fd/8 -> /dev/qcqmi2
+[03-21_12:04:48:369] /proc/19856/fd/11 -> /dev/qcqmi2
+[03-21_12:04:48:369] /proc/19856/fd/12 -> /dev/qcqmi2
+[03-21_12:04:48:369] /proc/19856/fd/13 -> /dev/qcqmi2
+[03-21_12:04:48:370] /proc/19856/fd/14 -> /dev/qcqmi2
+[03-21_12:04:48:370] /proc/19856/fd/15 -> /dev/qcqmi2
+[03-21_12:04:48:372] /proc/19856/exe -> /usr/sbin/quectel-CM
+[03-21_12:04:48:393] requestDeactivateDefaultPDP WdsConnectionIPv4Handle
+[03-21_12:04:48:457] requestDeactivateDefaultPDP WdsConnectionIPv6Handle
+[03-21_12:04:49:161] GobiNetThread exit
+[03-21_12:04:49:165] qmi_main exit
+[03-21_12:04:50:409] Get clientWDS = 8
+[03-21_12:04:50:473] Get clientWDS = 11
+[03-21_12:04:50:537] Get clientDMS = 12
+[03-21_12:04:50:601] Get clientNAS = 13
+[03-21_12:04:50:665] Get clientUIM = 14
+[03-21_12:04:50:729] Get clientWDA = 15
+[03-21_12:04:50:793] requestBaseBandVersion EM06ELAR03A08M4G
+[03-21_12:04:51:113] requestSetProfile[1] jawalnet.com.sa///0
+[03-21_12:04:51:241] requestGetProfile[1] jawalnet.com.sa///0
+[03-21_12:04:51:305] requestRegistrationState2 MCC: 404, MNC: 98, PS: Attached, DataCap: LTE
+[03-21_12:04:51:433] requestQueryDataCall IPv4ConnectionStatus: DISCONNECTED
+[03-21_12:04:51:497] requestQueryDataCall IPv6ConnectionStatus: DISCONNECTED
+[03-21_12:04:51:657] requestSetupDataCall WdsConnectionIPv4Handle: 0x75b3b880
+[03-21_12:04:51:913] requestSetupDataCall WdsConnectionIPv6Handle: 0x75b13fb0
+[03-21_12:04:52:428] ipv4: netmask = 255.255.255.240
+[03-21_12:04:52:428] ipv4: dns1 = 122.169.123.80
+[03-21_12:04:52:428] ipv4: dns2 = 59.144.144.46
+[03-21_12:04:52:429] ipv4 mtu: 1500
+[03-21_12:04:52:536] ipv6 dns1: 2404:a800:0000:0014:0000:0000:0001:1019
+[03-21_12:04:52:536] ipv6 dns2: 2401:4900:0050:0009:0000:0000:0000:0028

@@ -1,0 +1,26 @@
+#!/bin/bash
+clear
+
+
+
+usage()
+{
+	echo "Usage: mob [OPTION]..."
+	echo "     --push            push project into github"
+}
+
+
+lazypush()
+{
+	echo "[*] lazy push into github"
+	git config --global user.email "hon.mechanic@gmail.com"
+	git config --global user.name "qcockroach"
+
+	git add .
+	git commit -m '[~] lazy commit'
+	git push
+}
+
+
+lazypush
+

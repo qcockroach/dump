@@ -1,0 +1,51 @@
+#!/bin/bash
+
+GIT_DIRNAME=git-database
+
+mob_encode()
+{
+	echo "Encoding..."
+	for path in $(find . -type d -name .git); do
+		if [[ $path == "./.git" ]]; then
+			echo "skipped dump git-database: ./.git"
+			continue ;
+		fi
+
+		mv $path "$(dirname $path)/$GIT_DIRNAME"
+		echo ">> $path ==> $(dirname $path)/$GIT_DIRNAME"
+	done
+}
+
+mob_decode()
+{
+	echo "Decoding..."
+	for path in $(find . -type d -name "$GIT_DIRNAME"); do
+		mv $path "$(dirname $path)/.git"
+		echo ">> $path ==> $(dirname $path)/.git"
+	done
+}
+
+mod_upload()
+{
+	rm -rf .git
+	# To save inner git submodule's data
+	mob_encode && echo
+
+	git init
+	git add .
+
+	git commit -m 'dump commit'
+
+	git remote add origin https://github.com/qcockroach/dump
+	git push --force origin master
+}
+
+if [[ $1 == "up" ]]; then
+	mod_upload
+elif [[ $1 == "en" ]]; then
+	mob_encode
+elif [[ $1 == "de" ]]; then
+	mob_decode
+else
+	echo "Usage: mob [mode]"
+fi
